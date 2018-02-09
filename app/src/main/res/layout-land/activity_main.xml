@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appsdj.chrismascard.MainActivity">
+
+    <ImageView
+        android:id="@+id/card_bg"
+        android:src="@drawable/christmas_card_bg_landscape_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/merry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/GreetingFontStyle"
+        android:textSize="24sp"
+        android:text="Merry Christmas!" />
+
+    <TextView
+        android:id="@+id/last_ch"
+        android:layout_below="@id/merry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/SongFontStyleLandscape"
+        android:text="Last Christmas I gave..." />
+
+    <ImageView
+        android:id="@+id/yamaha"
+        android:src="@drawable/yamaha"
+        android:layout_below="@id/last_ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/but_the"
+        android:layout_below="@id/yamaha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textAppearance="@style/SongFontStyleLandscape"
+        android:text="But the very next day you gave it..." />
+
+    <ImageView
+        android:id="@+id/huawei"
+        android:src="@drawable/huawei"
+        android:layout_below="@id/but_the"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp" />
+
+    <ImageView
+        android:id="@+id/notes_end"
+        android:src="@drawable/notes_end"
+        android:layout_below="@+id/huawei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="From your WhAm-droid"
+        android:textAppearance="@style/GreetingFontStyle"
+        android:textSize="20sp" />
+
+</RelativeLayout>
